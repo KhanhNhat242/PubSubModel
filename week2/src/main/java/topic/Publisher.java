@@ -19,7 +19,7 @@ public class Publisher {
 		Properties settings=new Properties();
 		settings.setProperty(Context.INITIAL_CONTEXT_FACTORY, 
 		"org.apache.activemq.jndi.ActiveMQInitialContextFactory");
-		settings.setProperty(Context.PROVIDER_URL, "tcp://localhost:61616");
+		settings.setProperty(Context.PROVIDER_URL, "tcp://localhost:5555");
 		//tạo context
 		Context ctx=new InitialContext(settings);
 		//lookup JMS connection factory
